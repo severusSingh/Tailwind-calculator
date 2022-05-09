@@ -10,6 +10,13 @@ for(item of buttons){
             display.value = screenvalue;
         }
 
+        else if(buttonText== '%'){
+            buttonText='/100';
+            screenvalue += buttonText;
+            display.value = screenvalue;
+
+        }
+
         else if(buttonText=='del'){
             
             screenvalue = display.value.slice(0,-1);
